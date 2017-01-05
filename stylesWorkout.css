@@ -1,0 +1,944 @@
+/* =================================
+  Base Styles
+==================================== */
+
+  body, section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background-color: rgb(7, 39, 45);
+  	margin: 0;
+  }
+
+  footer .input-contact {
+    color: #fff;
+    border: none;
+  }
+
+  input::-webkit-input-placeholder {
+  color: #fff !important;
+  }
+
+  input:-moz-placeholder { /* Firefox 18- */
+  color: #fff !important;
+  }
+
+  input::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff !important;
+  }
+
+  input:-ms-input-placeholder {
+  color: #fff !important;
+  }
+
+/* =================================
+  Side Navigation Menu
+==================================== */
+
+  body {
+      font-family: 'Source+Sans+Pro', sans-serif;
+      transition: background-color .5s;
+  }
+
+  .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      background-color: #07272d;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+  }
+
+  .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s
+  }
+
+  .sidenav a:hover, .offcanvas a:focus{
+      color: #fff;
+  }
+
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+
+  #main {
+      transition: margin-left .5s;
+      padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+
+  /* =================================
+  Navigation
+  ==================================== */
+  /*navigation menu styling for the mobile view*/
+
+  .tablet {
+    display:none;
+  }
+
+  .section-four {
+    display: none;
+  }
+
+  .section-five {
+    display: none;
+  }
+
+  .navbar {
+    color: #fff;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5%;
+  }
+
+  nav .resoltz-logo-large {
+    display: none;
+  }
+
+  .resoltz-top-logo {
+    position: relative;
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .menu-nav .fa {
+    font-size: 150%;
+    cursor: pointer;
+  }
+
+  .top-nav, .fa.fa-bars {
+    cursor: pointer;
+  }
+
+/* =================================
+  Section One
+==================================== */
+
+  .action-shot {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-one {
+    position: relative;
+  }
+
+  .center-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar-tablet .play-section-one {
+    position: absolute;
+    opacity: 0.5;
+    font-size: 4em;
+    text-align: center;
+    color: #fff;
+    top: 3%;
+  }
+
+ /*video player menu styling at the bottom*/
+  .play-menu-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .play-menu-bar {
+    position: absolute;
+    bottom: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    padding: 2% 0;
+  }
+  .play-controls {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .workout-title {
+    margin: 0 5%;
+    overflow: visible;
+    white-space: nowrap;
+  }
+
+  .player {
+    color: #fff;
+  }
+
+  .play-menu-bar .fa {
+    color: rgba(255,255, 255, .5);
+    cursor: pointer;
+  }
+
+
+ /*=================================
+  Section Two:
+==================================== */
+
+ /*Buttons for the drop down menus*/
+  .section-two .accordion  {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    margin: 5% 0;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .section-two .accordion.active, .section-two .accordion:hover {
+    color: rgb(0, 178, 135);
+  }
+
+  /* Style  for the accordion panel. Note: hidden by default */
+  .section-two .panel {
+    font-family: "Source Sans Pro";
+    text-align: center;
+    color: grey;
+    cursor: pointer;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+  }
+
+  .section-two .panel p:hover, .section-two .panel p:active {
+    color: rgb(0, 172, 200);
+  }
+
+  .section-two .accordion:after {
+    font-family: FontAwesome;
+    content: "\f0d7";
+    display: inline-block;
+    padding-left: 1%;
+    vertical-align: middle;
+    width: 12px;
+  }
+
+  .section-two .accordion.active:after {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    display: inline-block;
+    padding-left: 1%;
+    vertical-align: middle;
+    width: 12px;
+  }
+
+  .section-two .panel {
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.6s ease-in-out;
+      opacity: 0;
+  }
+
+  /* The "show" class expands the accordion. This will show the panel content */
+  .section-two .panel.show {
+      display: block;
+      opacity: 1;
+      max-height: 500px;
+  }
+
+/* =================================
+  Section Three:
+==================================== */
+
+.section-three article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+
+/*.section-three article.center-image-container {
+
+}*/
+
+.section-three article .play-section-one {
+  position: absolute;
+  opacity: 0.8;
+  font-size: 4em;
+  text-align: center;
+  color: red;
+  bottom: 280%;
+}
+
+/*video player menu styling at the bottom*/
+.section-three article .play-menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.section-three article .play-menu-bar {
+  position: relative;
+  bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(7,39,45);
+  width: 100%;
+  padding: 2% 0;
+}
+.section-three article .play-controls {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-three article.workout-title {
+  margin: 0 5%;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.section-three article .player {
+  color: #fff;
+}
+
+.section-three article .play-menu-bar .fa {
+  color: rgba(255,255, 255, 1);
+  cursor: pointer;
+}
+
+/* =================================
+  Section Four
+==================================== */
+
+/* =================================
+  Section Five
+==================================== */
+
+/* =================================
+  Section Six
+==================================== */
+
+
+/* =================================
+  Section Seven
+==================================== */
+
+/* =================================
+  Section Seven
+==================================== */
+
+/* =================================
+  Section Eight
+==================================== */
+
+/* =================================
+  Section Nine
+==================================== */
+
+#large-screen {
+  display:none;
+}
+
+.video-tile.tablet {
+  display: none;
+}
+
+/* =================================
+  Footer
+==================================== */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #07272d;
+  font-family: 'Source+Sans+Pro', sans-serif;
+  padding: 5%;
+  color: #fff;
+}
+
+
+.input-contact {
+  display:block;
+  margin: 0 0 5% 0;
+  width: 94%;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 3%;
+  color: #fff;
+}
+
+.button-footer {
+  border-radius: 10px;
+  width: 50%;
+  height: 3%;
+  margin: 0;
+  font-family: 'Source+Sans+Pro', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 4% 0% 4% 0%;
+  cursor:pointer;
+  float: right;
+  background-color: rgb(0, 178, 135);
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+
+.social-media-icons .footer-social {
+  margin: 0 5% 0 0;
+}
+
+footer .fa {
+  color: #fff;
+}
+
+.quick-links {
+  display:none;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+
+  .mobile-view {
+    display:none;
+
+  }
+
+  /* =================================
+    Nav
+  ==================================== */
+
+.tablet {
+  position: absolute;
+  display: flex;
+  color: #fff;
+  font-family: 'Source+Sans+Pro', sans-serif;
+  white-space: nowrap;
+}
+
+
+/*top section containing nav bar */
+.navbar-tablet {
+  order: -3;
+
+}
+
+.navbar-tablet nav {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+
+}
+
+nav .resoltz-logo-large {
+  display: none;
+}
+
+.navbar-tablet .resoltz-logo {
+  width: 10%;
+  height: auto;
+
+}
+
+.navbar-tablet .menu-nav {
+  display: none;
+}
+
+.navbar-tablet .connect-device-nav {
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.section-one .top-nav {
+  margin-left: 5%;
+  font-size: 1em;
+}
+.section-one .profile-pic-nav {
+  margin-left: auto;
+}
+
+.section-one .lisaB-pic {
+  border-radius: 100%;
+  border-style: solid;
+  border-color: rgb(0, 172, 200);
+  height: 55px;
+  width: auto;
+
+}
+
+.section-one .connect-device-nav {
+  border-radius: 10px;
+  background-color: rgb(0, 178, 135);
+  height: 3%;
+  margin: 0 0 0 3%;
+  font-family: 'Source+Sans+Pro', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  cursor:pointer;
+
+}
+
+.navbar-tablet img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* =================================
+  Section One - tablet view
+==================================== */
+  .section-one {
+    float: clear;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms--display: flex;
+  }
+
+  .navbar-tablet .play-section-one {
+    top: 10%;
+    font-size: 8em;
+  }
+
+  .play-menu-container {
+    font-size: 2em;
+  }
+
+  /* =================================
+    Section Two - tablet view
+  ==================================== */
+
+  /*Favorites, Duration, and Difficulty*/
+  .section-two {
+    padding: 5% 0;
+    order: -2;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-two .panel.show {
+
+  }
+
+  /* =================================
+    Section Three - tablet view
+  ==================================== */
+
+  /* workout videos*/
+  .section-three {
+    width: 100%;
+    order: 2;
+    margin:5% 3.5% 0 1.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms--display: flex;
+  }
+
+  .section-three .video-tile.tablet {
+    display: flex;
+    position: relative;
+  }
+
+  .section-three article {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+
+
+  /*.section-three article.center-image-container {
+
+  }*/
+
+  .section-three article .play-section-one {
+    position: absolute;
+    opacity: 1;
+    font-size: 4em;
+    text-align: center;
+    color: #fff;
+    bottom: 280%;
+  }
+
+  /*video player menu styling at the bottom*/
+  .section-three article .play-menu-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1em;
+  }
+  .section-three article .play-menu-bar {
+    position: relative;
+    bottom: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(7,39,45);
+    width: 100%;
+    padding: 2% 0;
+  }
+  .section-three article .play-controls {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-three article.workout-title {
+    margin: 0 5%;
+    overflow: visible;
+    white-space: nowrap;
+  }
+
+  .section-three article .player {
+    color: #fff;
+  }
+
+  .section-three article .play-menu-bar .fa {
+    color: rgba(255,255, 255, 1);
+    cursor: pointer;
+  }
+
+
+  /* =================================
+    Section Four - tablet view
+  ==================================== */
+
+  .section-four {
+    padding: 5% 0;
+    width:45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    order: 1;
+
+  }
+  .section-four .btns{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin: 5%;
+    padding: 5%;
+    font-family: 'Source+Sans+Pro', sans-serif;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    cursor:pointer;
+  }
+
+  .section-four .workout-button.btns{
+    background-color: rgb(0, 172, 200);
+  }
+
+  .section-four .plans-button.btns{
+    background-color: rgb(0, 178, 135);
+  }
+
+  /* =================================
+    Section Five - tablet view
+  ==================================== */
+
+  /*Suggested Workouts*/
+  .section-five {
+    width: 100%;
+    background-color: rgb(0, 178, 135);
+    order: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms--display: flex;
+    padding: 1% 3% 5% 3%;
+  }
+
+  .section-five .carousel-buttons {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+  }
+  .section-five .trainer-snapshot{
+    width: 100%;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms--display: flex;
+  }
+
+  .section-five article {
+    width: 30%;
+    height: auto;
+  }
+  .section-five article .play-menu-bar {
+    position: relative;
+    background-color: rgb(7,39,45);
+    color: rgb(255, 255, 255);
+    bottom: 4px;
+    font-size: .3em;
+  }
+
+  .section-five article .play-menu-bar .fa {
+    color: rgb(255, 255, 255);
+  }
+
+  .section-five article .play-section-five {
+    position: absolute;
+    bottom: 280%;
+    font-size: 4em;
+  }
+
+  /* =================================
+    Section Six - tablet view
+  ==================================== */
+
+  /* =================================
+    Section Seven - tablet view
+  ==================================== */
+
+  /* =================================
+    Section Eight - tablet view
+  ==================================== */
+
+  /* =================================
+    Section Nine - tablet view
+  ==================================== */
+
+  /* =================================
+    Footer - tablet view
+  ==================================== */
+
+footer {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .connect, footer .contact {
+  width: 50%;
+  margin: 0% 5%;
+}
+
+.button-footer {
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+  margin: 0%;
+  font-family: 'Source+Sans+Pro', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 4% 0% 4% 0%;
+  cursor:pointer;
+  float:right;
+}
+
+.quick-links {
+  display:none;
+}
+
+}
+
+/* =================================
+  Large Screen Media Query
+==================================== */
+
+@media (min-width: 1024px) {
+
+.section-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+	}
+
+/*Navigation section on desktop screen*/
+
+nav {
+  flex-direction: row;
+  justify-content:flex-end;
+
+}
+
+nav .resoltz-logo {
+  display: none;
+}
+
+nav .resoltz-logo-large {
+  display: inline;
+  width: 15%;
+  height: auto;
+}
+
+.navbar-tablet .play-section-one {
+  top: 10%;
+  font-size: 15em;
+}
+
+.play-menu-container {
+  font-size: 2em;
+}
+
+.section-one .top-nav {
+  margin-left: 5%;
+  font-size: 1.5em;
+}
+
+.section-one .profile-pic-nav {
+  margin-left: auto;
+}
+
+.section-two .accordion {
+  font-size: 2em;
+}
+
+.section-three article {
+  width: 30%;
+}
+
+.section-three article .play-menu-container {
+  font-size: 1.2em;
+}
+
+.section-four .btns {
+  font-size: 2em;
+}
+
+.carousel-buttons {
+  font-size: 2em;
+}
+
+.section-five article .play-menu-bar {
+  font-size: .6em;
+  bottom: 10px;
+}
+
+
+ /*Footer section on large screen */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+footer h2 {
+  font-size: 2.5em;
+}
+
+footer .button-footer {
+  border-radius: 10px;
+  width: 50%;
+  height: 3%;
+  margin: 0;
+  font-family: 'Source+Sans+Pro', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 4% 0% 10% 0%;
+  cursor:pointer;
+  float: right;
+  background-color: rgb(0, 178, 135);
+}
+
+footer input {
+  font-size: 1em;
+}
+
+.contact , .quick-links, .connect {
+  width: 50%;
+  margin: 0;
+
+}
+
+.quick-links {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  margin: 0 5%;
+}
+
+.quick-links a, .connect a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+footer h5 {
+  align-self: flex-end;
+}
+}

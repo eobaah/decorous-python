@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resoltz New Look</title>
+  <link href="animate.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+
+<!-- Dropdown nav menu for mobile  -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Start your workout</a>
+    <a href="#">Sign up</a>
+    <a href="#">Login</a>
+    <a href="#">About</a>
+  </div>
+
+  <!-- End dropdown nav menu for mobile  -->
+<body id="main">
+  <header>
+
+    <!-- Nav menu for mobile  -->
+    <nav class="mobile-view">
+      <div class="navbar resoltz-logo">
+          <img class="resoltz-top-logo" src="images/resoltz-new-log-horiz.png">
+      </div>
+      <div class="navbar">
+          <i class="fa fa-bars" onclick="openNav()"></i>
+      </div>
+    </nav>
+  </header>
+  <section class="section-one">
+    <div class="navbar-tablet">
+      <nav class="tablet">
+        <div class="resoltz-logo top-nav">
+            <img class="resoltz-top-logo" src="images/resoltz_new_mark-large.png">
+        </div>
+        <div class="resoltz-logo-large top-nav">
+            <img class="resoltz-top-logo" src="images/resoltz-new-log-vert-large.png">
+        </div>
+        <div class="menu-nav top-nav">
+            <i class="fa fa-bars" onclick="openNav()"></i>
+        </div>
+        <div class="sign-up-nav top-nav">
+          Sign up
+        </div>
+        <div class="log-in-nav top-nav">
+          Log in
+        </div>
+        <div class="about-nav top-nav">
+          About
+        </div>
+        <div class="start-workout nav top-nav">
+            Start your workout
+        </div>
+      </nav>
+      <!-- End nav menu for mobile -->
+
+      <img class="action-shot" src="images/stockPhotos/situpslegsview.jpg">
+      <!-- <img class="action-shot" src="images/stockPhotos/yogaCandice.jpg"> -->
+      <!-- <img class="action-shot" src="images/stockPhotos/stretchNoelle2.jpg"> -->
+      <!-- <img class="action-shot" src="images/stockPhotos/gluteNoelle.jpg"> -->
+      <div>
+        <img class="action-shot logo-section-one" src="images/resoltz-new-log-vert-large-white.png">
+      </div>
+    </div>
+
+
+ <!-- second section -->
+    <div class="section-two">
+      <h1>A Wellness Companion:</h1>
+      <p>providing engagement, tracking, and motivation</p>
+    </div>
+
+<!-- third section -->
+    <div class="section-three social-workout third-row-col">
+      <div>
+        <div class="tablet-image">
+          <img id="stretch-outside" class="action-shot" src="images/stockPhotos/stretchOutside.jpg">
+        </div>
+      </div>
+      <div>
+        <h1 class="caption-title">A social workout experience</h1>
+        <p class="caption-para">Using workout groups, posts, and competitions, you'll connect with others who provide inspiration as well as with users who are inspired by you.</p>
+      </div>
+    </div>
+
+<!-- Fourth section -->
+    <div class="section-four">
+      <img id="pink-arm-stretch" class="caption-shot" src="images/stockPhotos/pinkBraArmStretchFocus.jpg">
+      <h1 class="caption-title">Track your progress</h1>
+      <p class="caption-para">
+          Relevant analytics to provide insights about your current fitness habits and to track your progress towards creating new healthy habits.
+      </p>
+    </div>
+
+<!-- Fifth section -->
+    <div class="section-five">
+      <img class="logo-section-five" src="images/resoltz-new-log-vert-large-white.png">
+      <h1 class="tag-line">We motivate. You inspire.</h1>
+    </div>
+
+<!-- Sixth section -->
+    <div class="section-six got-your-back">
+      <img id="back-stretch" class="caption-shot" src="images/stockPhotos/blackManBackFocus.jpg">
+      <h1 class="caption-title">We've got your back</h1>
+      <p class="caption-para">Wherever you are along your fitness journey, you'll have custom wellness content to match your goals, schedule, and mood.</p>
+    </div>
+
+<!-- Seventh section -->
+    <div class="section-seven">
+      <div class="button start-workout" href="#">
+          Start workout
+      </div>
+      <div class="button sign-up" href="#">
+          Sign up here
+      </div>
+    </div>
+
+<!-- Eigth section -->
+    <div class="section-eight">
+      <h1 class="meet-trainer">Meet our trainers</h1>
+    </div>
+
+<!-- Trainer carousel -->
+    <div id="carousel-tablet" class="section-nine trainer-carousel">
+
+      <!-- Left and right carousel controls -->
+      <div class="buttons">
+        <a class="btn arrow-left" onclick="plusDivsTablet(-1)">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <a class="btn arrow-right" onclick="plusDivsTablet(1)">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Domination -->
+      <div class="tablet trainer-snapshot">
+        <div class="image-container">
+          <img class="trainer-profile-pic" src="images/profile-Domination.png">
+        </div>
+        <div class="trainer-text">
+          <h1>Demarco</h1>
+          <p>Build muscle or tone up using basic workout equipment.</p>
+        </div>
+        <div class="trainer-icon-read-me" href="https://resoltz.com/domination"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+        </div>
+      </div>
+
+      <!-- Kristen -->
+      <div class="tablet trainer-snapshot">
+        <div class="image-container">
+          <img class="trainer-profile-pic" src="images/profile-kristen.png">
+        </div>
+        <div class="trainer-text">
+          <h1>Kristen</h1>
+          <p>A classically trained dancer, whose workouts keep you lean, strong, and flexible.</p>
+        </div>
+        <div class="trainer-icon-read-me" href="https://resoltz.com/k-perfect-fitness"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+        </div>
+      </div>
+
+      <!-- Christine Salus -->
+      <div class="tablet trainer-snapshot">
+        <div class="image-container">
+          <img class="trainer-profile-pic" src="images/profile-christine.png">
+        </div>
+        <div class="trainer-text">
+          <h1>Christine</h1>
+          <p>Cardio exercises that include silent workouts, which are neighbor friendly.</p>
+        </div>
+        <div class="trainer-icon-read-me" href="https://resoltz.com/christine-salus"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+        </div>
+      </div>
+
+      <!-- Bombay Jam -->
+      <div class="tablet trainer-snapshot">
+        <div class="image-container">
+          <img class="trainer-profile-pic" src="images/profile-bombayjam.png">
+        </div>
+        <div class="trainer-text">
+          <h1>Bombay Jam</h1>
+          <p>Make your workouts fun with dance fitness videos to hit Bollywood songs.</p>
+        </div>
+        <div class="trainer-icon-read-me" href="https://resoltz.com/bombay-jam"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+        </div>
+      </div>
+
+      <!-- Coach Tommy -->
+      <div class="tablet trainer-snapshot">
+        <div class="image-container">
+          <img class="trainer-profile-pic" src="images/profile-coachtommy.png">
+        </div>
+        <div class="trainer-text">
+          <h1>Coach Tommy</h1>
+          <p>30-minute bodyweight workouts for beginners to elite athletes.</p>
+        </div>
+        <div class="trainer-icon-read-me" href="https://resoltz.com/coach-tommy"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+        </div>
+      </div>
+
+      <!-- Millionaire Hoy -->
+      <div class="tablet trainer-snapshot">
+        <div class="image-container">
+          <img class="trainer-profile-pic" src="images/profile-millionairehoy.jpg">
+        </div>
+        <div class="trainer-text">
+          <h1>Millionaire Hoy</h1>
+          <p>Quick 10-minute abs, HIIT, and total bodyweight workouts that will torch calories.</p>
+        </div>
+        <div class="trainer-icon-read-me" href="https://resoltz.com/millionaire-hoy"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+        </div>
+      </div>
+
+      <!-- Aimee Nicotera -->
+      <div class="tablet trainer-snapshot">
+        <div class="image-container">
+          <img class="trainer-profile-pic" src="images/profile-aimee.png">
+        </div>
+        <div class="trainer-text">
+          <h1>Aimee Nicotera</h1>
+          <p>20-minutes of cardio and toning. These low-impact workouts are perfect for all fitness levels.</p>
+        </div>
+        <div class="trainer-icon-read-me" href="https://resoltz.com/aimee-nicotera"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Trainer carousel Large Screen-->
+    <div id="large-screen" class="section-nine trainer-carousel" style="overflow: hidden; position: relative;">
+
+      <!-- Left and right carousel controls -->
+      <div class="buttons">
+        <a class="btn arrow-left" onclick="plusDivsLarge(-1)">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <a class="btn arrow-right" onclick="plusDivsLarge(1)">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Carousel slide 1 on large screen -->
+      <div class="large trainer-snapshot" style"width: 1200%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px); visibility: visible;">
+            <!-- Domination -->
+        <div class="domination trainer">
+          <div class="image-container">
+            <img class="trainer-profile-pic" src="images/profile-Domination.png">
+          </div>
+          <div class="trainer-text">
+            <h1>Demarco</h1>
+            <p>Build muscle or tone up using basic workout equipment.</p>
+          </div>
+          <div class="trainer-icon-read-me" href="https://resoltz.com/domination"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+          </div>
+        </div>
+
+        <!-- Kristen -->
+        <div class="kristen trainer">
+          <div class="image-container">
+            <img class="trainer-profile-pic" src="images/profile-kristen.png">
+          </div>
+          <div class="trainer-text">
+            <h1>Kristen</h1>
+            <p>A classically trained dancer, whose workouts keep you lean, strong, and flexible.</p>
+          </div>
+          <div class="trainer-icon-read-me" href="https://resoltz.com/k-perfect-fitness"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+          </div>
+        </div>
+
+        <!-- Christine Salus -->
+        <div class="christine trainer">
+          <div class="image-container">
+            <img class="trainer-profile-pic" src="images/profile-christine.png">
+          </div>
+          <div class="trainer-text">
+            <h1>Christine</h1>
+            <p>Cardio exercises that include silent workouts, which are neighbor friendly.</p>
+          </div>
+          <div class="trainer-icon-read-me" href="https://resoltz.com/christine-salus"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel slide 2 on large screen -->
+      <div class="large trainer-snapshot">
+        <!-- Bombay Jam -->
+        <div class="bombayjam trainer">
+          <div class="image-container">
+            <img class="trainer-profile-pic" src="images/profile-bombayjam.png">
+          </div>
+          <div class="trainer-text">
+            <h1>Bombay Jam</h1>
+            <p>Make your workouts fun with dance fitness videos to hit Bollywood songs.</p>
+          </div>
+          <div class="trainer-icon-read-me" href="https://resoltz.com/bombay-jam"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+          </div>
+        </div>
+
+        <!-- Coach Tommy -->
+        <div class="tommy trainer">
+          <div class="image-container">
+            <img class="trainer-profile-pic" src="images/profile-coachtommy.png">
+          </div>
+          <div class="trainer-text">
+            <h1>Coach Tommy</h1>
+            <p>30-minute bodyweight workouts for beginners to elite athletes.</p>
+          </div>
+          <div class="trainer-icon-read-me" href="https://resoltz.com/coach-tommy"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+          </div>
+        </div>
+
+        <!-- Millionaire Hoy -->
+        <div class="millionaire trainer">
+          <div class="image-container">
+            <img class="trainer-profile-pic" src="images/profile-millionairehoy.jpg">
+          </div>
+          <div class="trainer-text">
+            <h1>Millionaire Hoy</h1>
+            <p>Quick 10-minute abs, HIIT, and total bodyweight workouts that will torch calories.</p>
+          </div>
+          <div class="trainer-icon-read-me" href="https://resoltz.com/millionaire-hoy"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel slide 3 on large screen -->
+      <div class="large trainer-snapshot">
+        <!-- Aimee Nicotera -->
+        <div class="Aimee trainer">
+          <div class="image-container">
+            <img class="trainer-profile-pic" src="images/profile-aimee.png">
+          </div>
+          <div class="trainer-text">
+            <h1>Aimee Nicotera</h1>
+            <p>20-minutes of cardio and toning. These low-impact workouts are perfect for all fitness levels.</p>
+          </div>
+          <div class="trainer-icon-read-me" href="https://resoltz.com/aimee-nicotera"><img class="trainer-icon" src="images/resoltz_new_mark.png"><span class="read-more">Read More</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <div class="contact">
+      <h2>Contact</h2>
+      <input class="input-contact input-email" type="text" placeholder="Email">
+      <input class="input-contact input-message" type="text" placeholder="Message">
+      <div class="button-footer start-workout" href="#">
+          Submit
+      </div>
+    </div>
+    <div class="quick-links">
+      <h2>Quick Links</h2>
+      <a href="#">About</a>
+      <a href="#">Help</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="connect">
+      <h2>Connect</h2>
+      <div class="social-media-icons" href="#">
+        <div class="footer-social">
+          <a href="https://www.facebook.com/resoltz" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/resoltz/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.twitter.com/resoltz/" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+      <h5>&#169; 2017 Resoltz Inc.</h5>
+    </div>
+  </footer>
+  <script>
+    document.body.onload = showDivs();
+    document.body.onload = showDivsTablet();
+    document.body.onload = showDivsLarge();
+  </script>
+</body>
+</html>

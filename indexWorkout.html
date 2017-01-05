@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resoltz Workout Page</title>
+  <link href="animate.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="stylesWorkout.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+
+<!-- Dropdown nav menu for mobile  -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Stats</a>
+    <a href="#">Messaging</a>
+    <a href="#">Calendar</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <!-- End dropdown nav menu for mobile  -->
+<body id="main">
+  <header>
+
+    <!-- Nav menu for mobile  -->
+    <nav class="mobile-view">
+      <div class="navbar resoltz-logo">
+          <img class="resoltz-top-logo" src="images/resoltz-new-log-horiz.png">
+      </div>
+      <div class="navbar">
+          <i class="fa fa-bars" onclick="openNav()"></i>
+      </div>
+    </nav>
+  </header>
+  <section class="section-one">
+    <div class="navbar-tablet">
+      <div class="play-container">
+        <nav class="tablet">
+          <div class="resoltz-logo top-nav">
+              <img class="resoltz-top-logo" src="images/resoltz-new-log-vert-large.png">
+          </div>
+          <div class="resoltz-logo-large top-nav">
+              <img class="resoltz-top-logo" src="images/resoltz-new-log-vert-large.png">
+          </div>
+          <div class="menu-nav top-nav">
+              <i class="fa fa-bars" onclick="openNav()"></i>
+          </div>
+          <div class="profile-pic-nav top-nav">
+            <img class="lisaB-pic" src="workoutFolder/lisaBProfilePic.jpg">
+          </div>
+          <div class="account-nav top-nav">
+            Account
+          </div>
+          <div class="help-nav top-nav">
+            Help
+          </div>
+          <div class="connect-device-nav top-nav">
+              Connect device
+          </div>
+        </nav>
+      </div>
+      <!-- End nav menu for mobile -->
+        <img class="action-shot" src="workoutFolder/pinkBraPushUp.jpg">
+      <div class="center-image-container">
+        <i class="fa fa-play-circle-o play-section-one" onclick="#"></i>
+          <div class="play-menu-container">
+            <div class="play-menu-bar">
+              <i class="fa fa-cog player" onclick="#"></i>
+              <span class="play-controls player">
+                <i class="fa fa-backward player" onclick="#"></i>
+                <span class="workout-title player">Fitness Test</span>
+                <i class="fa fa-forward player" onclick="#"></i>
+              </span>
+              <span class="workout-time player">06:34</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+ <!-- second section -->
+    <div class="section-two">
+      <div class="accordion" onclick="showAcc()">Favorites</div>
+      <div class="panel">
+        <p>8-minute Core Crusher</p>
+        <p>Zilla Planks</p>
+        <p>Domination: Day 1</p>
+      </div>
+      <div class="accordion" onclick="showAcc()">Duration</div>
+      <div class="panel">
+        <p> 15 mins or less </p>
+        <p> 30 mins or less </p>
+        <p> 60 mins or less </p>
+        <p> Above 60 mins </p>
+      </div>
+      <div class="accordion" onclick="showAcc()">Difficulty</div>
+      <div class="panel">
+        <p>Beginner</p>
+        <p>Intermediate</p>
+        <p>Advanced</p>
+      </div>
+    </div>
+
+<!-- third section -->
+    <div class="section-three">
+      <!-- First video  -->
+        <article class="video-tile">
+          <img class="female-pullup action-shot" src="workoutFolder/femalePullUp.jpg">
+          <div class="play-menu-container">
+            <div class="play-menu-bar">
+              <i class="fa fa-play-circle-o play-section-one" onclick="#"></i>
+              <div class="video-icons">
+                <i class="fa fa-heart player" onclick="#"></i>
+                <i class="fa fa-cog player" onclick="#"></i>
+              </div>
+              <span class="play-controls player">
+                <span class="workout-title player">Arms and Back</span>
+              </span>
+              <span class="workout-time player">09:52</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-tile">
+          <img class="female-plank action-shot" src="workoutFolder/pinkOneLegPlank.jpg">
+          <div class="play-menu-container">
+            <div class="play-menu-bar">
+              <i class="fa fa-play-circle-o play-section-one" onclick="#"></i>
+              <div class="video-icons">
+                <i class="fa fa-heart player" onclick="#"></i>
+                <i class="fa fa-cog player" onclick="#"></i>
+              </div>
+              <span class="play-controls player">
+                <span class="workout-title player">Chest Burnout</span>
+              </span>
+              <span class="workout-time player">09:12</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-tile">
+          <img class="wall-squat action-shot" src="workoutFolder/coupleWallSquat.jpg">
+          <div class="play-menu-container">
+            <div class="play-menu-bar">
+              <i class="fa fa-play-circle-o play-section-one" onclick="#"></i>
+              <div class="video-icons">
+                <i class="fa fa-heart player" onclick="#"></i>
+                <i class="fa fa-cog player" onclick="#"></i>
+              </div>
+              <span class="play-controls player">
+                <span class="workout-title player">Lower Body Strength</span>
+              </span>
+              <span class="workout-time player">09:44</span>
+            </div>
+          </div>
+        </article>
+
+        <article class=" video-tile">
+          <img class="couple-stretch action-shot" src="workoutFolder/coupleCameraLookAway.jpg">
+          <div class="play-menu-container">
+            <div class="play-menu-bar">
+              <i class="fa fa-play-circle-o play-section-one" onclick="#"></i>
+              <div class="video-icons">
+                <i class="fa fa-heart player" onclick="#"></i>
+                <i class="fa fa-cog player" onclick="#"></i>
+              </div>
+              <span class="play-controls player">
+                <span class="workout-title player">Stretch</span>
+              </span>
+              <span class="workout-time player">07:12</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-tile tablet">
+          <img class="plank-two action-shot" src="workoutFolder/pinkBraBackMuscle.jpg">
+          <div class="play-menu-container">
+            <div class="play-menu-bar">
+              <i class="fa fa-play-circle-o play-section-one" onclick="#"></i>
+              <div class="video-icons">
+                <i class="fa fa-heart player" onclick="#"></i>
+                <i class="fa fa-cog player" onclick="#"></i>
+              </div>
+              <span class="play-controls player">
+                <span class="workout-title player">Planks Too</span>
+              </span>
+              <span class="workout-time player">10:09</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-tile tablet">
+          <img class="arms-chest action-shot" src="workoutFolder/dudesPushChallenge.jpg">
+          <div class="play-menu-container">
+            <div class="play-menu-bar">
+              <i class="fa fa-play-circle-o play-section-one" onclick="#"></i>
+              <div class="video-icons">
+                <i class="fa fa-heart player" onclick="#"></i>
+                <i class="fa fa-cog player" onclick="#"></i>
+              </div>
+              <span class="play-controls player">
+                <span class="workout-title player">Arms and Chest</span>
+              </span>
+              <span class="workout-time player">12:18</span>
+            </div>
+          </div>
+        </article>
+
+    </div>
+
+<!-- Fourth section -->
+    <div class="section-four">
+      <div class="workout-button btns" href="#">
+          Workouts
+      </div>
+      <div class="plans-button btns" href="#">
+          Plans
+      </div>
+    </div>
+
+<!-- Fifth section -->
+    <div class="section-five">
+
+      <!-- Left and right carousel controls -->
+      <div class="carousel-buttons">
+        <a class="btn arrow-left" onclick="plusDivs(-1)">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <h4 class="suggested-title">Suggested Workouts</h4>
+        <a class="btn arrow-right" onclick="plusDivs(1)">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="video-content trainer-snapshot">
+      <!-- Stretch outside video -->
+      <article class="outside-stretch library">
+        <img class="arms-chest action-shot" src="workoutFolder/outsideStretch.jpg">
+        <div class="play-menu-container">
+          <div class="play-menu-bar">
+            <i class="fa fa-play-circle-o play-section-five" onclick="#"></i>
+            <div class="video-icons">
+              <i class="fa fa-heart player" onclick="#"></i>
+              <i class="fa fa-cog player" onclick="#"></i>
+            </div>
+            <span class="play-controls player">
+              <span class="workout-title player">Revive Stretch</span>
+            </span>
+            <span class="workout-time player">11:06</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Pilates core -->
+      <article class="pilates-core library">
+        <img class="arms-chest action-shot" src="workoutFolder/pinkBraSitup.jpg">
+        <div class="play-menu-container">
+          <div class="play-menu-bar">
+            <i class="fa fa-play-circle-o play-section-five" onclick="#"></i>
+            <div class="video-icons">
+              <i class="fa fa-heart player" onclick="#"></i>
+              <i class="fa fa-cog player" onclick="#"></i>
+            </div>
+            <span class="play-controls player">
+              <span class="workout-title player">Revive Stretch</span>
+            </span>
+            <span class="workout-time player">11:06</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Lower body -->
+      <article class="wall-squat library">
+        <img class="wall-squat action-shot" src="workoutFolder/coupleWallSquat.jpg">
+        <div class="play-menu-container">
+          <div class="play-menu-bar">
+            <i class="fa fa-play-circle-o play-section-five" onclick="#"></i>
+            <div class="video-icons">
+              <i class="fa fa-heart player" onclick="#"></i>
+              <i class="fa fa-cog player" onclick="#"></i>
+            </div>
+            <span class="play-controls player">
+              <span class="workout-title player">Lower Body Strength</span>
+            </span>
+            <span class="workout-time player">09:44</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="video-content trainer-snapshot">
+
+    <!-- Pilates core -->
+    <article class="pilates-core library">
+      <img class="arms-chest action-shot" src="workoutFolder/pinkBraSitup.jpg">
+      <div class="play-menu-container">
+        <div class="play-menu-bar">
+          <i class="fa fa-play-circle-o play-section-five" onclick="#"></i>
+          <div class="video-icons">
+            <i class="fa fa-heart player" onclick="#"></i>
+            <i class="fa fa-cog player" onclick="#"></i>
+          </div>
+          <span class="play-controls player">
+            <span class="workout-title player">Revive Stretch</span>
+          </span>
+          <span class="workout-time player">11:06</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Core buster  -->
+    <article class="core-buster library">
+      <img class="core-buster action-shot" src="workoutFolder/dudeAbs.jpg">
+      <div class="play-menu-container">
+        <div class="play-menu-bar">
+          <i class="fa fa-play-circle-o play-section-five" onclick="#"></i>
+          <div class="video-icons">
+            <i class="fa fa-heart player" onclick="#"></i>
+            <i class="fa fa-cog player" onclick="#"></i>
+          </div>
+          <span class="play-controls player">
+            <span class="workout-title player">Core Buster</span>
+          </span>
+          <span class="workout-time player">12:04</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Pushup Challenge -->
+    <article class="push-up-challenge library">
+      <img class="dude-push-up action-shot" src="workoutFolder/dudesPushChallenge.jpg">
+      <div class="play-menu-container">
+        <div class="play-menu-bar">
+          <i class="fa fa-play-circle-o play-section-five" onclick="#"></i>
+          <div class="video-icons">
+            <i class="fa fa-heart player" onclick="#"></i>
+            <i class="fa fa-cog player" onclick="#"></i>
+          </div>
+          <span class="play-controls player">
+            <span class="workout-title player">Arms and Chest</span>
+          </span>
+          <span class="workout-time player">12:18</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="video-content trainer-snapshot">
+  <!-- Stretch outside video -->
+  <article class="planks library">
+      <img class="plank-two action-shot" src="workoutFolder/pinkBraBackMuscle.jpg">
+    <div class="play-menu-container">
+      <div class="play-menu-bar">
+        <i class="fa fa-play-circle-o play-section-five" onclick="#"></i>
+        <div class="video-icons">
+          <i class="fa fa-heart player" onclick="#"></i>
+          <i class="fa fa-cog player" onclick="#"></i>
+        </div>
+        <span class="play-controls player">
+          <span class="workout-title player">Planks Too</span>
+        </span>
+        <span class="workout-time player">10:09</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- Outside stretch -->
+  <article class="outside-stretch library">
+      <img class="arms-chest action-shot" src="workoutFolder/outsideStretch.jpg">
+    <div class="play-menu-container">
+      <div class="play-menu-bar">
+        <i class="fa fa-play-circle-o play-section-five" onclick="#"></i>
+        <div class="video-icons">
+          <i class="fa fa-heart player" onclick="#"></i>
+          <i class="fa fa-cog player" onclick="#"></i>
+        </div>
+        <span class="play-controls player">
+          <span class="workout-title player">Revive Stretch</span>
+        </span>
+        <span class="workout-time player">11:06</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- Female Pull Up -->
+  <article class="wall-squat library">
+    <img class="female-pullup action-shot" src="workoutFolder/femalePullUp.jpg">
+    <div class="play-menu-container">
+      <div class="play-menu-bar">
+        <i class="fa fa-play-circle-o play-section-five" onclick="#"></i>
+        <div class="video-icons">
+          <i class="fa fa-heart player" onclick="#"></i>
+          <i class="fa fa-cog player" onclick="#"></i>
+        </div>
+        <span class="play-controls player">
+          <span class="workout-title player">Arms and Back</span>
+        </span>
+        <span class="workout-time player">09:52</span>
+      </div>
+    </div>
+  </article>
+
+  </div>
+  </div>
+
+
+  </section>
+  <footer>
+    <div class="contact">
+      <h2>Contact</h2>
+      <input class="input-contact input-email" type="text" placeholder="Email">
+      <input class="input-contact input-message" type="text" placeholder="Message">
+      <div class="button-footer" href="#">
+          Submit
+      </div>
+    </div>
+    <div class="quick-links">
+      <h2>Quick Links</h2>
+      <a href="#">About</a>
+      <a href="#">Help</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="connect">
+      <h2>Connect</h2>
+      <div class="social-media-icons" href="#">
+        <div class="footer-social">
+          <a href="https://www.facebook.com/resoltz" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/resoltz/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.twitter.com/resoltz/" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+      <h5>&#169; 2017 Resoltz Inc.</h5>
+    </div>
+  </footer>
+  <script>
+    // Script to make sure the carousel works immediately on page load
+    document.body.onload = showDivs();
+    document.body.onload = showDivsTablet();
+    document.body.onload = showDivsLarge();
+  </script>
+</body>
+</html>

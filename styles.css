@@ -1,0 +1,1057 @@
+/* =================================
+  Base Styles
+==================================== */
+
+  body, section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background-color: rgb(7, 39, 45);
+  	margin: 0;
+  }
+
+  footer .input-contact {
+    color: #fff;
+    border: none;
+  }
+
+  input::-webkit-input-placeholder {
+  color: #fff !important;
+  }
+
+  input:-moz-placeholder { /* Firefox 18- */
+  color: #fff !important;
+  }
+
+  input::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff !important;
+  }
+
+  input:-ms-input-placeholder {
+  color: #fff !important;
+  }
+
+/* =================================
+  Side Navigation Menu
+==================================== */
+
+  body {
+      font-family: 'Source+Sans+Pro', sans-serif;
+      transition: background-color .5s;
+  }
+
+  .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      background-color: #07272d;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+  }
+
+  .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s
+  }
+
+  .sidenav a:hover, .offcanvas a:focus{
+      color: #fff;
+  }
+
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+
+  #main {
+      transition: margin-left .5s;
+      padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+
+  /* =================================
+  Navigation
+  ==================================== */
+  /*navigation menu styling for the mobile view*/
+
+  .tablet {
+    display:none;
+  }
+
+  .navbar {
+    color: #fff;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5%;
+  }
+
+  nav .resoltz-logo-large {
+    display: none;
+  }
+
+  .resoltz-top-logo {
+    position: relative;
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .menu-nav .fa {
+    font-size: 150%;
+    cursor: pointer;
+  }
+
+  .top-nav, .fa.fa-bars {
+    cursor: pointer;
+  }
+
+/* =================================
+  Section One
+==================================== */
+
+  .action-shot {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-one {
+    position: relative;
+  }
+
+  .navbar-tablet .logo-section-one {
+    position: absolute;
+    padding: 2em;
+    width: 50%;
+    left: 50%;
+    top: 2%;
+    opacity: 0.5;
+    transform: translate(-50%, -50%);
+  }
+
+/* =================================
+  Section Two: A Wellness Companion...
+==================================== */
+
+  .section-two h1  {
+    font-family: "Source Sans Pro";
+    text-align: center;
+    color: rgb(7, 39, 45);
+  }
+
+  .section-two p  {
+    font-family: "Source Sans Pro";
+    text-align: center;
+    color: rgb(7, 39, 45);
+  }
+
+/* =================================
+  Section Three:
+==================================== */
+
+  .section-three {
+    background-color: rgb(0, 178, 135);
+    position: relative;
+    padding: 0 0 0 0;
+  }
+
+  .section-three h1  {
+    font-family: "Source Sans Pro";
+    text-align: center;
+    color: #fff;
+    margin: 5%;
+  }
+
+  .section-three p  {
+    font-family: "Source Sans Pro";
+    text-align: center;
+    color: #fff;
+    margin: 5%;
+  }
+
+/* =================================
+  Section Four
+==================================== */
+
+.section-four {
+position: relative;
+padding: 0;
+margin: 0;
+}
+
+.section-four img {
+display: block;
+width: 100%;
+height: auto;
+}
+
+.section-four:after {
+content:"";
+position: absolute;
+display: block;
+left: 0%;
+top: 0%;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.8) 100%) repeat 0 0;
+z-index: 1;
+}
+
+.section-four h1 {
+  display: block;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  font-family: "Source Sans Pro";
+  text-align: center;
+  left: 0;
+  top: 0%;
+  bottom: 0;
+  padding: 0;
+  font-weight: 700;
+  z-index: 5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.section-four p {
+  display: block;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  font-family: "Source Sans Pro";
+  text-align: center;
+  left: 0;
+  bottom: 0px;
+  padding: 5%;
+  font-size: 100%;
+  font-weight: 200;
+  z-index: 5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* =================================
+  Section Five
+==================================== */
+
+.section-five {
+  background-color: rgb(0, 172, 200);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-five h1 {
+  font-family: "Source Sans Pro";
+  text-align: center;
+  color: #fff;
+}
+
+.logo-section-five {
+  padding: 2em;
+  width: 50%;
+  opacity: 1;
+  align-self: center;
+}
+
+/* =================================
+  Section Six
+==================================== */
+
+  .section-six {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  }
+
+  .section-six img {
+  display: block;
+  width: 100%;
+  height: auto;
+  }
+
+.section-six:after {
+  content:"";
+  position: absolute;
+  display: block;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.8) 100%) repeat 0 0;
+  z-index: 1;
+  }
+
+  .section-six h1 {
+    display: block;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    font-family: "Source Sans Pro";
+    text-align: center;
+    left: 0;
+    top: 0%;
+    bottom: 0;
+    padding: 0;
+    font-weight: 700;
+    z-index: 5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .section-six p {
+    display: block;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    font-family: "Source Sans Pro";
+    text-align: center;
+    left: 0;
+    bottom: 0px;
+    padding: 5%;
+    font-size: 100%;
+    font-weight: 200;
+    z-index: 5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+/* =================================
+  Section Seven
+==================================== */
+  .section-seven {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .section-seven .button {
+    border-radius: 10px;
+    width: 40%;
+    height: 3%;
+    margin: 0;
+    font-family: 'Source+Sans+Pro', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 4% 0% 4% 0%;
+    cursor:pointer;
+  }
+  .start-workout {
+    background-color: rgb(0, 178, 135);
+  }
+
+  .sign-up {
+    background-color: rgb(0, 172, 200);
+  }
+
+  .sixth-row {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .button-sixth-row {
+    border-radius: 10px;
+    width: 100%;
+    height: 3%;
+    margin: 5%;
+    font-family: 'Source+Sans+Pro', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 3% 1%;
+    cursor:pointer;
+  }
+/* =================================
+  Section Seven
+==================================== */
+
+.section-seven .button {
+  margin-top: 5%;
+  padding: 3%;
+  border-radius: 10px;
+  height: auto;
+}
+
+/* =================================
+  Section Eight
+==================================== */
+
+.section-eight h1{
+  color: #07272d;
+  font-family: "Source Sans Pro";
+  text-align: center;
+}
+
+/* =================================
+  Section Nine
+==================================== */
+
+#large-screen {
+  display:none;
+}
+
+.trainer-snapshot {
+  border: dotted rgba(7, 39, 45, .3) 2px;
+  border-radius: 20px;
+  min-width: auto;
+  min-height: 320px;
+  padding: 5%;
+  margin: 0% 0% 5% 0%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.trainer-snapshot p {
+  min-height: 10%;
+}
+
+
+.section-nine .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 5% 0%;
+  padding: 0 5%;
+
+}
+.section-nine .btn {
+  position: relative;
+  display: inline;
+  font-size: 150%;
+  padding: 0% 0% 0 0%;
+  cursor:pointer;
+  color: rgba(0, 178, 135, 0.2);
+}
+
+
+.section-nine .btn:disabled * {
+  pointer-events:none
+}
+
+.section-nine .trainer-snapshot {
+  display:flex;
+  flex-direction: column;
+
+}
+.trainer-text {
+  color: #07272d;
+  font-family: "Source Sans Pro";
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.trainer-profile-pic {
+  height: 15%;
+  width: auto%;
+  border-radius: 100%;
+}
+
+.trainer-icon-read-me {
+  margin-top: auto;
+  text-align: center;
+  cursor:pointer;
+}
+
+.trainer-icon {
+  width: 10%;
+  margin-right: 5%;
+}
+
+.read-more {
+  font-family: 'Source+Sans+Pro', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #07272d;
+  cursor:pointer;
+}
+
+
+/* =================================
+  Footer
+==================================== */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #07272d;
+  font-family: 'Source+Sans+Pro', sans-serif;
+  padding: 5%;
+  color: #fff;
+}
+
+
+.input-contact {
+  display:block;
+  margin: 0 0 5% 0;
+  width: 94%;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 3%;
+  color: #fff;
+}
+
+.button-footer {
+  border-radius: 10px;
+  width: 50%;
+  height: 3%;
+  margin: 0;
+  font-family: 'Source+Sans+Pro', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 4% 0% 4% 0%;
+  cursor:pointer;
+  float: right;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+
+.social-media-icons .footer-social {
+  margin: 0 5% 0 0;
+}
+
+footer .fa {
+  color: #fff;
+}
+
+.quick-links {
+  display:none;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+
+  .mobile-view {
+    display:none;
+
+  }
+
+  /* =================================
+    Nav
+  ==================================== */
+
+.tablet {
+  position: absolute;
+  display: flex;
+  color: #fff;
+  font-family: 'Source+Sans+Pro', sans-serif;
+  white-space: nowrap;
+}
+
+/*top section containing nav bar */
+.navbar-tablet {
+  order: -3;
+  /*display: flex;*/
+}
+
+.navbar-tablet nav {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+
+}
+
+nav .resoltz-logo-large {
+  display: none;
+}
+
+.navbar-tablet .resoltz-logo {
+  width: 10%;
+  height: auto;
+
+}
+
+.navbar-tablet .menu-nav {
+  display: none;
+}
+
+.navbar-tablet .start-workout {
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.section-one .top-nav {
+  margin-left: 5%;
+  font-size: 1em;
+}
+.section-one .sign-up-nav {
+  margin-left: auto;
+}
+
+.navbar-tablet img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* =================================
+  Section One - tablet view
+==================================== */
+  .section-one {
+    float: clear;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms--display: flex;
+  }
+
+  .action-shot.logo-section-one {
+    top: 10%;
+  }
+
+  /* =================================
+    Section Two - tablet view
+  ==================================== */
+
+  /*A wellness companion*/
+  .section-two {
+    order: -2;
+  }
+
+  .section-two h1 {
+    font-size: 2em;
+  }
+
+  .section-two p {
+    font-size: 1.5em;
+    margin-bottom: 5%;
+  }
+
+  /* =================================
+    Section Three - tablet view
+  ==================================== */
+
+  /*A social workout experience*/
+  .section-three {
+    width: 45%;
+    order: 2;
+    margin:5% 3.5% 0 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms--display: flex;
+  }
+
+  #stretch-outside {
+    margin-top: -1%;
+  }
+  .section-three .caption-title {
+    font-size: 2em;
+  }
+
+  .section-three .caption-para  {
+    font-size: 2em;
+  }
+
+  /* =================================
+    Section Four - tablet view
+  ==================================== */
+
+  /*Track you progress*/
+
+  #pink-arm-stretch {
+    display:none;
+  }
+
+  .section-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    order: 1;
+    position: relative;
+    z-index: 1;
+    background-image: url("images/stockPhotos/pinkBraArmStretch-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    height: 100%;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms--display: flex;
+  }
+
+
+  .section-four h1, .section-six h1 {
+    padding: 5%;
+    font-size: 3em;
+    position: relative;
+  }
+
+  .section-four p, .section-six p  {
+    position: relative;
+    font-size: 2em;
+    padding: 5%;
+  }
+
+  /* =================================
+    Section Five - tablet view
+  ==================================== */
+
+  /*We motivate you inspire*/
+  .section-five {
+    width: 45%;
+    order: -1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms--display: flex;
+  }
+
+  .logo-section-five{
+    height: auto;
+    width: 80%;
+  }
+  .section-five .tag-line {
+    font-size: 3.5em;
+    margin: 5%;
+  }
+
+  /* =================================
+    Section Six - tablet view
+  ==================================== */
+
+  /*We got your back*/
+  .section-six {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    order: 3;
+    margin-top:5%;
+    z-index: 0;
+    width: 45%;
+    background: url("images/stockPhotos/blackManBack-tablet.jpg") no-repeat center;
+    background-size: cover;
+    height: auto%;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms--display: flex;
+  }
+
+  #back-stretch{
+    display: none;
+  }
+
+  /* =================================
+    Section Seven - tablet view
+  ==================================== */
+
+  /*start and sign up buttons are hidden in the tablet view*/
+  .section-seven {
+    order: 4
+  }
+
+  .section-seven .button {
+    display: none;
+  }
+
+  /* =================================
+    Section Eight - tablet view
+  ==================================== */
+
+
+  /*Meet our trainers*/
+  .section-eight {
+    order: 4;
+    width:100%;
+    margin: 5% 0%;
+  }
+
+  /* =================================
+    Section Nine - tablet view
+  ==================================== */
+
+  #large-screen {
+    display:none;
+  }
+
+  /*Trainer carousel*/
+  .section-nine {
+    order: 5;
+    width: 100%;
+  }
+
+  .section-nine .trainer-snapshot{
+    position: relative;
+    max-width: 100%;
+    min-height: 320px;
+  }
+
+  .trainer-profile-pic {
+    height: 15%;
+    width: auto;
+  }
+
+
+  /* =================================
+    Footer - tablet view
+  ==================================== */
+
+footer {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .connect, footer .contact {
+  width: 50%;
+  margin: 0% 5%;
+}
+
+.button-footer {
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+  margin: 0%;
+  font-family: 'Source+Sans+Pro', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 4% 0% 4% 0%;
+  cursor:pointer;
+  float:left;
+}
+
+.quick-links {
+  display:none;
+}
+
+}
+
+/* =================================
+  Large Screen Media Query
+==================================== */
+
+@media (min-width: 1024px) {
+
+.section-one {
+    display: flex;
+    flex-wrap: wrap;
+<<<<<<< HEAD
+    justify-content: space-around;
+=======
+    justify-content: flex-end;
+>>>>>>> ecf0ed314512f67533800dd8bda602d4f943e8a9
+    align-items: stretch;
+	}
+
+
+
+
+/*Navigation section on desktop screen*/
+
+nav {
+  flex-direction: row;
+  justify-content:flex-end;
+
+}
+
+nav .resoltz-logo {
+  display: none;
+}
+
+nav .resoltz-logo-large {
+  display: inline;
+  width: 15%;
+  height: auto;
+}
+
+.section-one .top-nav {
+  margin-left: 5%;
+  font-size: 1.5em;
+}
+
+.section-one .sign-up-nav {
+  margin-left: auto;
+}
+
+.action-shot.logo-section-one {
+  transform: translate(-50%, -15%);
+}
+/*A wellness companion*/
+.section-two {
+  flex-basis: 100%;
+  padding: 0;
+  margin:5%;
+  font-size: 2em;
+}
+
+/*Social workout experience*/
+.section-three {
+  order: 2;
+  width: 23%;
+  padding: 0;
+  margin:0;
+}
+
+/*Track your progress*/
+.section-four {
+  order: 1;
+  width: 23%;
+  height: auto;
+  padding: 0;
+  margin:0;
+}
+
+/*We motivate. You inspire.*/
+.section-five {
+  order: 0;
+  width: 23%;
+  padding: 0%;
+  margin:0;
+}
+
+/*We got your back*/
+.section-six {
+  order: 3;
+  width: 23%;
+  padding: 0;
+  margin:0;
+}
+
+/*Start workout buttons*/
+.section-seven {
+  flex-grow: 25%;
+}
+
+/*Meet the trainers*/
+.section-eight {
+  order: 4;
+  flex-basis: 100%;
+  padding: 0;
+  margin:3% 0 0 0;
+  font-size: 3em;
+}
+
+/*Trainer carousel*/
+#carousel-tablet {
+  display: none;
+}
+
+#large-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-nine {
+  order: 5;
+  width: 100%;
+}
+
+.section-nine .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 2em;
+
+}
+
+#large-screen .trainer-snapshot {
+  display: flex;
+  width:89.5%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 320px;
+}
+
+#large-screen .trainer-icon-read-me {
+  margin-top: auto;
+}
+
+.section-nine .large .trainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+
+}
+
+.section-nine .aimee {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+ /*Footer section on large screen */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.contact , .quick-links, .connect {
+  width: 50%;
+
+}
+
+.quick-links {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  margin: 0 5%;
+}
+
+.quick-links a, .connect a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+}
